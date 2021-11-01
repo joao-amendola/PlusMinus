@@ -42,9 +42,9 @@ class Result
         double negativeProportion = (double)negativeNumber / arr.Count;
         double zeroesProportion   = (double)zeroNumber / arr.Count;
 
-        Console.WriteLine(System.Math.Round(pos, 6));
-        Console.WriteLine(System.Math.Round(neg, 6));
-        Console.WriteLine(System.Math.Round(neu, 6));
+        Console.WriteLine(System.Math.Round(positiveProportion, 6));
+        Console.WriteLine(System.Math.Round(negativeProportion, 6));
+        Console.WriteLine(System.Math.Round(zeroesProportion, 6));
     }
 }
 
