@@ -14,18 +14,38 @@ using System;
 
 class Result
 {
-
     /*
      * Complete the 'plusMinus' function below.
      *
      * The function accepts INTEGER_ARRAY arr as parameter.
      */
+    static int positiveNumber;
+    static int negativeNumber;
+    static int zeroNumber;
 
     public static void plusMinus(List<int> arr)
     {
-        
-    }
+        foreach (var item in arr)
+        {
+            if (item != 0)
+            {
+                if (item > 0)
+                    positiveNumber++;
+                else
+                    negativeNumber++;
+            }
+            else
+                zeroNumber++;
+        }
 
+        double positiveProportion = (double)positiveNumber / arr.Count;
+        double negativeProportion = (double)negativeNumber / arr.Count;
+        double zeroesProportion   = (double)zeroNumber / arr.Count;
+
+        Console.WriteLine(System.Math.Round(pos, 6));
+        Console.WriteLine(System.Math.Round(neg, 6));
+        Console.WriteLine(System.Math.Round(neu, 6));
+    }
 }
 
 class Solution
